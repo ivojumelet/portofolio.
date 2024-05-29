@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: yellow;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-photo img {
+    max-width: 200px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+}
+
+.divider, .yellow-divider {
+    background-color: yellow;
+    width: 5px;
+    margin: 0 20px;
+}
+
+.yellow-divider {
+    height: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.center-container > section {
+    max-width: 800px;
+}
+
+h1, h2 {
+    color: lightgreen;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Navigatiebalk */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #FDD835; /* Donkerder geel voor de navigatiebalk */
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #333; /* Zorgt voor contrast */
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: white; /* Lichtgeel voor de header */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Main layout met CSS Grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Artikelstijlen */
+article, section {
+    background-color: #FFEB3B; /* Lichtgeel voor artikelen en secties */
+    padding: 20px;
+}
+
+/* Profielinformatie en foto */
+.profile-info, figure.profile-photo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-info .social-links {
+    margin-top: 10px;
+}
+
+.profile-info .social-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.profile-info .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #FFEB3B; /* Lichtgeel voor de footer */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    color: #333; /* Zorgt voor leesbaarheid */
+}
+
+/* Gele balken */
+hr {
+    border: 0;
+    height: 10px;
+    background-color: #FDD835; /* Donkerder geel voor contrast */
+}
+
+/* Aanpassing voor responsive design */
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Flexbox voor het aligneren van items binnen secties */
+    article, section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
